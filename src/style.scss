@@ -1,9 +1,12 @@
 $lightFont: #afafaf;
 $button: #8c30ff;
+$background: #8489ff;
+$blogbutton:#676cfd;
 
-.app {
+
+
     .container {
-        .logincontainer {
+        .container {
             padding: 0 0 0 4.0rem;
             display: flex;
             gap: 4.0rem;
@@ -109,7 +112,7 @@ $button: #8c30ff;
 
 
 
-            .image {
+            .image2 {
                 background-image: url(../public/image/loginside.png);
                 flex: 1.1;
                 background-repeat: no-repeat;
@@ -119,7 +122,7 @@ $button: #8c30ff;
         }
 
     }
-}
+
 
 
 /* header */
@@ -128,19 +131,22 @@ $button: #8c30ff;
 	display: none;
 }
 nav { 
+	position: relative;
 	margin:0;
 	padding: 0 30px 0 0;
 	background-color: #fff;
 	// border-bottom: 1px solid #b1b7c5;
 	box-shadow: rgb(3 27 78 / 10%) 0 2px 4px;
+	z-index: 10;
 }
 
 #logo {
+	position: absolute;
 	display: flex;
   	align-items: center;
 	padding: 15px 30px;
 	float: left;
-	height: 50px;
+	height: 100%;
 
 }
 
@@ -202,6 +208,7 @@ nav ul ul {
 /* Display Dropdowns on Hover */
 nav ul li:hover > ul {
 	display:inherit;
+	z-index: 1;
 }
 	
 /* Fisrt Tier Dropdown */
@@ -376,3 +383,246 @@ footer{
 
 	}
 }
+
+.home{
+	padding: 10.5rem 9.5rem;
+	.posts{
+		display: flex;
+		flex-direction: column;
+		gap: 150px;
+		
+		.post{
+			display: flex;
+			gap:100px;
+
+			&:nth-child(2n+1){
+				flex-direction: row-reverse;
+			}
+
+			.img{
+				flex: 1.5;
+				position: relative;
+				&::after{
+					content:"";
+					width: 100%;
+					height: 100%;
+					background-color: $background;
+					position: absolute;
+					top: 20px;
+					left: -20px;
+					z-index: -1;
+				}
+
+				img{
+					max-height: 400px;
+					width: 100%;
+					height: 300px;
+					object-fit: cover;
+
+					
+				}
+			}
+			.content{
+				flex: 2;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				h1{
+					font-size: 35px;
+					font-weight: 500;
+				}
+				p{
+					font-size: 21px;
+					font-weight: 300;
+				}
+				button{
+					width: max-content;
+					padding: 10px 20px;
+					border: none;
+					cursor: pointer;
+					background-color: #FFF;
+					border: 1px solid $background;
+					font-size: 18px;
+					font-weight: 300;
+					color: $blogbutton;
+					&:hover{
+						border: 1px solid white;
+						background-color: $blogbutton;
+						color: #FFF;
+					}
+				}
+				.link{
+					text-decoration: none;
+					color: #000;
+				}
+			}
+		}
+
+	}
+}
+
+// Homepage
+
+// Homepage
+.main {
+	background: transparent;
+	background-image: url("../public/image/heroline.svg");
+	background-position: top;
+	background-repeat: no-repeat;
+  }
+  .mainbellow {
+	background: linear-gradient(
+	  0deg,
+	  rgba(243, 244, 248, 1) 0%,
+	  rgba(255, 255, 255, 0) 50%
+	);
+	background-image: url("../public/image/homepagehero.png") ;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+  }
+  .mainbellow> svg{
+	  bottom: unset;
+	  left: 50%;
+	  max-height: 80%;
+	  right: unset;
+	  top: 60%;
+	  transform: translate(-50%,-50%);
+  }
+  .herotitle {
+	font-size: 50px;
+	font-weight: 500;
+	padding: 20px 0 0 0;
+	line-height: 45px;
+	
+  }
+  
+  .pagecontent {
+	margin: 40px 30px 40px 30px;
+	font-size: 22px;
+	font-weight: 300 !important;
+  }
+  
+  .herocontainer {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: -4rem;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 70rem;
+  }
+  .image {
+	bottom: 0;
+	display: block;
+	height: auto;
+	left: 50%;
+	min-width: 1280px;
+	position: absolute;
+	right: unset;
+	top: unset;
+	transform: translate(-50%);
+  }
+  
+  .hero {
+	display: flex;
+	flex: 1 1 auto;
+	flex-wrap: wrap;
+	/* margin: -0.75rem; */
+	justify-content: center;
+  }
+  
+  .herotile {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: 25px;
+  }
+  
+  .herolink {
+	align-items: center;
+	border-radius: 8px;
+	color: #000;
+	display: flex;
+	flex-wrap: wrap;
+	flex: 1 0 21%;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 7.75rem;
+	padding: 1em;
+	text-align: center;
+	transition: color 0.2s ease;
+	/* border: 0 solid #b1b7c5; */
+	background-color: #fff;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+	a{
+	text-decoration: none;
+	color: $blogbutton;
+	}
+  }
+  
+  .tools {
+	display: flex;
+	/* padding: 0.75rem; */
+	flex-direction: column;
+	justify-content: center;
+    align-items: center;
+  }
+  .tooltitle {
+	display: flex;
+	padding-top: 0px;
+	font-size: 17px;
+  }
+  
+  .homelink {
+	align-items: center;
+	border-radius: 8px;
+	color: inherit;
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 7.75rem;
+	text-align: center;
+	text-decoration: none;
+	transition: color 0.2s ease;
+  }
+  .Icon {
+	color: inherit;
+	display: inline-block;
+	height: 2rem;
+	position: relative;
+	vertical-align: middle;
+	width: 2rem;
+  }
+  .mt-4 {
+	margin-top: 1rem !important;
+  }
+
+  @media screen and (max-width: 640px) {
+
+	.herotitle {
+	  font-size: 30px;
+	  font-weight: 500;
+	  padding: 20px 0 0 0;
+	  line-height: 35px;
+	}
+	.pagecontent {
+	  margin: 0px 10px 40px 10px;
+	  font-size: 20px;
+	  font-weight: 300 !important;
+	}
+  
+	.herotile {
+	  display: inline-flex;
+	  flex-wrap: wrap;
+	  gap: 15px;
+	}
+	.herocontainer {
+	  display: flex;
+	  flex-direction: column;
+	  margin-bottom: -4rem;
+	  margin-left: 15px;
+	  margin-right: 15px;
+	  max-width: 50rem;
+	}
+  }
+

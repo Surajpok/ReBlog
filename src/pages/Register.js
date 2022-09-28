@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 const Register = () => {
   return (
-    <div className="logincontainer">
+    <div className="container">
       <div className="wrap">
         <p className="start">START FOR FREE</p>
         <h1 className="login">Sign Up</h1>
@@ -41,7 +41,7 @@ const Register = () => {
         </div>
       </div>
 
-      <div className="image"></div>
+      <div className="image2"></div>
     </div>
   )
 }

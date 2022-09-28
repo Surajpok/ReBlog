@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 const Login = () => {
   return (
-    <div className="logincontainer">
+    <div className="container">
       <div className="wrap">
         <p className="start">START FOR FREE</p>
         <h1 className="login">Login</h1>
@@ -54,7 +54,7 @@ const Login = () => {
         </div>
       </div>
 
-      <div className="image"></div>
+      <div className="image2"></div>
     </div>
   )
 }
