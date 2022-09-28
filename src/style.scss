@@ -1,127 +1,130 @@
 $lightFont: #afafaf;
 $button: #8c30ff;
 $background: #8489ff;
-$blogbutton:#676cfd;
+$blogbutton: #676cfd;
 
 
 
-    .container {
-        .container {
-            padding: 0 0 0 4.0rem;
-            display: flex;
-            gap: 4.0rem;
+.container {
+	.container {
+		padding: 0 0 0 4.0rem;
+		display: flex;
+		gap: 4.0rem;
 
-            .wrap {
-                display: flex;
-                align-items: flex-start;
-                justify-content: center;
-                height: 90vh;
-                flex-direction: column;
-                flex: 0.9;
-                flex-wrap: wrap;
+		.wrap {
+			display: flex;
+			align-items: flex-start;
+			justify-content: center;
+			height: 90vh;
+			flex-direction: column;
+			flex: 0.9;
+			flex-wrap: wrap;
 
-                .start {
-                    font-size: 16px;
-                    color: $lightFont;
-                    font-weight: 400;
-                }
+			.start {
+				font-size: 16px;
+				color: $lightFont;
+				font-weight: 400;
+			}
 
-                .login {
-                    font-size: 35px;
-                    font-weight: 400;
-                    margin-top: 0.8rem;
-                }
+			.login {
+				font-size: 35px;
+				font-weight: 400;
+				margin-top: 0.8rem;
+			}
 
-                .notamember {
-                    margin-top: 1.8rem;
-                    font-size: 18px;
-                }
+			.notamember {
+				margin-top: 1.8rem;
+				font-size: 18px;
+			}
 
-                .form {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 2.5rem;
-                    width: 100%;
-                    margin: 2.5rem 9.0rem 0 0;
+			.form {
+				display: flex;
+				flex-direction: column;
+				gap: 2.5rem;
+				width: 100%;
+				margin: 2.5rem 9.0rem 0 0;
 
-                    input {
-                        height: 30px;
-                        color: #000;
-                        border: none;
-                        border-bottom: 1px solid #E8E8E8;
-                        font-size: 18px;
-                        font-weight: 400;
-                    }
+				input {
+					height: 30px;
+					color: #000;
+					border: none;
+					border-bottom: 1px solid #E8E8E8;
+					font-size: 18px;
+					font-weight: 400;
+				}
 
-                    ::placeholder {
-                        font-size: 18px;
-                        font-weight: 300;
-                        color: $lightFont;
-                        padding-top: 1.0rem;
-                    }
-
-                    
-                }
-
-                button {
-                    height: 50px;
-                    font-size: 18px;
-                    border-radius: 88px;
-                    border: none;
-                    color: #fff;
-                    background-color: $button;
-                }
-
-                .checkbox {
-                    margin-top: 2.5rem;
-                    display: flex;
-                    width: 100%;
-                    justify-content: space-between;
-                    font-size: 18px;
-
-                    .lebel {
-                        display: flex;
-                        gap: 5px;
-                    }
-
-                    input[type="checkbox"] {
-                        width: 18px;
-                        height: 18px;
-                    }
-
-                }
-                .or {
-                    margin-top: 1.4rem;
-                    font-size: 18px;
-                    color: $lightFont;
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-                }
-                .auth{
-                    margin-top: 1.4rem;
-                    display: flex;
-                    justify-content: space-between;
-                    width: 100%;
-                    img{
-                        height: 50px;
-                    }
-                }
-
-            }
+				::placeholder {
+					font-size: 18px;
+					font-weight: 300;
+					color: $lightFont;
+					padding-top: 1.0rem;
+				}
 
 
+			}
 
-            .image2 {
-                background-image: url(../public/image/loginside.png);
-                flex: 1.1;
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: 45% 100%;
-            }
-        }
+			button {
+				height: 50px;
+				font-size: 18px;
+				border-radius: 88px;
+				border: none;
+				color: #fff;
+				background-color: $button;
+			}
 
-    }
+			.checkbox {
+				margin-top: 2.5rem;
+				display: flex;
+				width: 100%;
+				justify-content: space-between;
+				font-size: 18px;
+
+				.lebel {
+					display: flex;
+					gap: 5px;
+				}
+
+				input[type="checkbox"] {
+					width: 18px;
+					height: 18px;
+				}
+
+			}
+
+			.or {
+				margin-top: 1.4rem;
+				font-size: 18px;
+				color: $lightFont;
+				width: 100%;
+				display: flex;
+				justify-content: center;
+			}
+
+			.auth {
+				margin-top: 1.4rem;
+				display: flex;
+				justify-content: space-between;
+				width: 100%;
+
+				img {
+					height: 50px;
+				}
+			}
+
+		}
+
+
+
+		.image2 {
+			background-image: url(../public/image/loginside.png);
+			flex: 1.1;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: 45% 100%;
+		}
+	}
+
+}
 
 
 
@@ -130,9 +133,10 @@ $blogbutton:#676cfd;
 [id^=drop] {
 	display: none;
 }
-nav { 
+
+nav {
 	position: relative;
-	margin:0;
+	margin: 0;
 	padding: 0 30px 0 0;
 	background-color: #fff;
 	// border-bottom: 1px solid #b1b7c5;
@@ -143,7 +147,7 @@ nav {
 #logo {
 	position: absolute;
 	display: flex;
-  	align-items: center;
+	align-items: center;
 	padding: 15px 30px;
 	float: left;
 	height: 100%;
@@ -154,71 +158,73 @@ nav {
  * we need to add a clear after the container. */
 
 nav:after {
-	content:"";
-	display:table;
-	clear:both;
+	content: "";
+	display: table;
+	clear: both;
 }
 
 /* Removing padding, margin and "list-style" from the "ul",
  * and adding "position:reltive" */
 nav ul {
 	float: right;
-	padding:0;
-	margin:0;
+	padding: 0;
+	margin: 0;
 	list-style: none;
 	position: relative;
 	display: flex;
-    align-items: center;
-	}
-	
+	align-items: center;
+}
+
 /* Positioning the navigation items inline */
 nav ul li {
 	margin: 0px;
-	display:inline-block;
+	display: inline-block;
 	float: left;
 	background-color: #fff;
-	}
+}
 
 /* Styling the links */
 nav a {
-	display:block;
-	padding:14px 20px;	
-	color:var(--header);
-	font-size:17px;
-	text-decoration:none;
+	display: block;
+	padding: 14px 20px;
+	color: var(--header);
+	font-size: 17px;
+	text-decoration: none;
 }
 
 
-nav ul li ul li:hover { background: #fff; }
+nav ul li ul li:hover {
+	background: #fff;
+}
 
 /* Background color change on Hover */
-nav a:hover { 
-	background-color: transparent; 
+nav a:hover {
+	background-color: transparent;
 }
 
 /* Hide Dropdowns by Default
  * and giving it a position of absolute */
 nav ul ul {
 	display: none;
-	position: absolute; 
+	position: absolute;
 	/* has to be the same number as the "line-height" of "nav a" */
-	top: 60px; 
+	top: 60px;
 }
-	
+
 /* Display Dropdowns on Hover */
-nav ul li:hover > ul {
-	display:inherit;
+nav ul li:hover>ul {
+	display: inherit;
 	z-index: 1;
 }
-	
+
 /* Fisrt Tier Dropdown */
 nav ul ul li {
-	width:170px;
-  top:-10px;
-	float:none;
-	display:list-item;
+	width: 170px;
+	top: -10px;
+	float: none;
+	display: list-item;
 	position: relative;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 /* Second, Third and more Tiers	
@@ -227,18 +233,18 @@ nav ul ul li {
 */
 nav ul ul ul li {
 	position: relative;
-	top:-60px;
-	/* has to be the same number as the "width" of "nav ul ul li" */ 
-	left:170px; 
+	top: -60px;
+	/* has to be the same number as the "width" of "nav ul ul li" */
+	left: 170px;
 }
 
-	
+
 /* Change ' +' in order to change the Dropdown symbol */
 // li > a:after { content:  ' +'; }
 // li > a:only-child:after { content: ''; }
 
 /* index */
-.avatar{
+.avatar {
 	height: 50px;
 	border-radius: 50%;
 }
@@ -249,13 +255,15 @@ nav ul ul ul li {
 --------------------------------------------- */
 
 @media all and (max-width : 768px) {
-html,
-  body {
-    padding: 0;
-    margin: 0;
-    line-height: 1.6;
-    font-size: 19px;
-  }
+
+	html,
+	body {
+		padding: 0;
+		margin: 0;
+		line-height: 1.6;
+		font-size: 19px;
+	}
+
 	#logo {
 		display: block;
 		padding: 0;
@@ -270,7 +278,7 @@ html,
 
 	/* Hide the navigation menu by default */
 	/* Also hide the  */
-	.toggle + a,
+	.toggle+a,
 	.menu {
 		display: none;
 	}
@@ -279,11 +287,11 @@ html,
 	.toggle {
 		display: block;
 		background-color: #fff;
-		padding:14px 20px;	
-		color:#000;
-		font-size:17px;
-		text-decoration:none;
-		border:none;
+		padding: 14px 20px;
+		color: #000;
+		font-size: 17px;
+		text-decoration: none;
+		border: none;
 	}
 
 	.toggle:hover {
@@ -291,7 +299,7 @@ html,
 	}
 
 	/* Display Dropdown when clicked on Parent Lable */
-	[id^=drop]:checked + ul {
+	[id^=drop]:checked+ul {
 		display: block;
 	}
 
@@ -299,7 +307,7 @@ html,
 	nav ul li {
 		display: block;
 		width: 100%;
-		}
+	}
 
 	nav ul ul .toggle,
 	nav ul ul a {
@@ -311,38 +319,38 @@ html,
 	}
 
 	nav a:hover,
- 	nav ul ul ul a {
+	nav ul ul ul a {
 		background-color: #fff;
 	}
-  
+
 	nav ul li ul li .toggle,
 	nav ul ul a,
-  nav ul ul ul a{
-		padding:14px 20px;	
-		color:#FFF;
-		font-size:17px; 
+	nav ul ul ul a {
+		padding: 14px 20px;
+		color: #FFF;
+		font-size: 17px;
 	}
-  
-  
+
+
 	nav ul li ul li .toggle,
 	nav ul ul a {
-		background-color: #212121; 
+		background-color: #212121;
 	}
 
 	/* Hide Dropdowns by Default */
 	nav ul ul {
 		float: none;
-		position:static;
+		position: static;
 		color: #ffffff;
 		/* has to be the same number as the "line-height" of "nav a" */
 	}
-		
+
 	/* Hide menus on hover */
-	nav ul ul li:hover > ul,
-	nav ul li:hover > ul {
+	nav ul ul li:hover>ul,
+	nav ul li:hover>ul {
 		display: none;
 	}
-		
+
 	/* Fisrt Tier Dropdown */
 	nav ul ul li {
 		display: block;
@@ -351,7 +359,7 @@ html,
 
 	nav ul ul ul li {
 		position: static;
-		/* has to be the same number as the "width" of "nav ul ul li" */ 
+		/* has to be the same number as the "width" of "nav ul ul li" */
 
 	}
 
@@ -360,7 +368,7 @@ html,
 @media all and (max-width : 330px) {
 
 	nav ul li {
-		display:block;
+		display: block;
 		width: 94%;
 	}
 
@@ -368,7 +376,7 @@ html,
 
 
 // footer
-footer{
+footer {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -378,32 +386,35 @@ footer{
 	background-color: rgb(219, 219, 219);
 	font-size: 18px;
 	height: 50px;
-	img{
+
+	img {
 		height: 50px;
 
 	}
 }
 
-.home{
+.home {
 	padding: 10.5rem 9.5rem;
-	.posts{
+
+	.posts {
 		display: flex;
 		flex-direction: column;
 		gap: 150px;
-		
-		.post{
-			display: flex;
-			gap:100px;
 
-			&:nth-child(2n+1){
+		.post {
+			display: flex;
+			gap: 100px;
+
+			&:nth-child(2n+1) {
 				flex-direction: row-reverse;
 			}
 
-			.img{
+			.img {
 				flex: 1.5;
 				position: relative;
-				&::after{
-					content:"";
+
+				&::after {
+					content: "";
 					width: 100%;
 					height: 100%;
 					background-color: $background;
@@ -413,29 +424,33 @@ footer{
 					z-index: -1;
 				}
 
-				img{
+				img {
 					max-height: 400px;
 					width: 100%;
 					height: 300px;
 					object-fit: cover;
 
-					
+
 				}
 			}
-			.content{
+
+			.content {
 				flex: 2;
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
-				h1{
+
+				h1 {
 					font-size: 35px;
 					font-weight: 500;
 				}
-				p{
+
+				p {
 					font-size: 21px;
 					font-weight: 300;
 				}
-				button{
+
+				button {
 					width: max-content;
 					padding: 10px 20px;
 					border: none;
@@ -445,13 +460,15 @@ footer{
 					font-size: 18px;
 					font-weight: 300;
 					color: $blogbutton;
-					&:hover{
+
+					&:hover {
 						border: 1px solid white;
 						background-color: $blogbutton;
 						color: #FFF;
 					}
 				}
-				.link{
+
+				.link {
 					text-decoration: none;
 					color: #000;
 				}
@@ -469,49 +486,51 @@ footer{
 	background-image: url("../public/image/heroline.svg");
 	background-position: top;
 	background-repeat: no-repeat;
-  }
-  .mainbellow {
-	background: linear-gradient(
-	  0deg,
-	  rgba(243, 244, 248, 1) 0%,
-	  rgba(255, 255, 255, 0) 50%
-	);
-	background-image: url("../public/image/homepagehero.png") ;
+}
+
+.mainbellow {
+	background: linear-gradient(0deg,
+			rgba(243, 244, 248, 1) 0%,
+			rgba(255, 255, 255, 0) 50%);
+	background-image: url("../public/image/homepagehero.png");
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
-  }
-  .mainbellow> svg{
-	  bottom: unset;
-	  left: 50%;
-	  max-height: 80%;
-	  right: unset;
-	  top: 60%;
-	  transform: translate(-50%,-50%);
-  }
-  .herotitle {
+}
+
+.mainbellow>svg {
+	bottom: unset;
+	left: 50%;
+	max-height: 80%;
+	right: unset;
+	top: 60%;
+	transform: translate(-50%, -50%);
+}
+
+.herotitle {
 	font-size: 50px;
 	font-weight: 500;
 	padding: 20px 0 0 0;
 	line-height: 45px;
-	
-  }
-  
-  .pagecontent {
+
+}
+
+.pagecontent {
 	margin: 40px 30px 40px 30px;
 	font-size: 22px;
 	font-weight: 300 !important;
-  }
-  
-  .herocontainer {
+}
+
+.herocontainer {
 	display: flex;
 	flex-direction: column;
 	margin-bottom: -4rem;
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 70rem;
-  }
-  .image {
+}
+
+.image {
 	bottom: 0;
 	display: block;
 	height: auto;
@@ -521,23 +540,23 @@ footer{
 	right: unset;
 	top: unset;
 	transform: translate(-50%);
-  }
-  
-  .hero {
+}
+
+.hero {
 	display: flex;
 	flex: 1 1 auto;
 	flex-wrap: wrap;
 	/* margin: -0.75rem; */
 	justify-content: center;
-  }
-  
-  .herotile {
+}
+
+.herotile {
 	display: inline-flex;
 	flex-wrap: wrap;
 	gap: 25px;
-  }
-  
-  .herolink {
+}
+
+.herolink {
 	align-items: center;
 	border-radius: 8px;
 	color: #000;
@@ -553,26 +572,28 @@ footer{
 	/* border: 0 solid #b1b7c5; */
 	background-color: #fff;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-	a{
-	text-decoration: none;
-	color: $blogbutton;
+
+	a {
+		text-decoration: none;
+		color: $blogbutton;
 	}
-  }
-  
-  .tools {
+}
+
+.tools {
 	display: flex;
 	/* padding: 0.75rem; */
 	flex-direction: column;
 	justify-content: center;
-    align-items: center;
-  }
-  .tooltitle {
+	align-items: center;
+}
+
+.tooltitle {
 	display: flex;
 	padding-top: 0px;
 	font-size: 17px;
-  }
-  
-  .homelink {
+}
+
+.homelink {
 	align-items: center;
 	border-radius: 8px;
 	color: inherit;
@@ -584,45 +605,62 @@ footer{
 	text-align: center;
 	text-decoration: none;
 	transition: color 0.2s ease;
-  }
-  .Icon {
+}
+
+.Icon {
 	color: inherit;
 	display: inline-block;
 	height: 2rem;
 	position: relative;
 	vertical-align: middle;
 	width: 2rem;
-  }
-  .mt-4 {
-	margin-top: 1rem !important;
-  }
+}
 
-  @media screen and (max-width: 640px) {
+.mt-4 {
+	margin-top: 1rem !important;
+}
+
+@media screen and (max-width: 640px) {
 
 	.herotitle {
-	  font-size: 30px;
-	  font-weight: 500;
-	  padding: 20px 0 0 0;
-	  line-height: 35px;
+		font-size: 30px;
+		font-weight: 500;
+		padding: 20px 0 0 0;
+		line-height: 35px;
 	}
-	.pagecontent {
-	  margin: 0px 10px 40px 10px;
-	  font-size: 20px;
-	  font-weight: 300 !important;
-	}
-  
-	.herotile {
-	  display: inline-flex;
-	  flex-wrap: wrap;
-	  gap: 15px;
-	}
-	.herocontainer {
-	  display: flex;
-	  flex-direction: column;
-	  margin-bottom: -4rem;
-	  margin-left: 15px;
-	  margin-right: 15px;
-	  max-width: 50rem;
-	}
-  }
 
+	.pagecontent {
+		margin: 0px 10px 40px 10px;
+		font-size: 20px;
+		font-weight: 300 !important;
+	}
+
+	.herotile {
+		display: inline-flex;
+		flex-wrap: wrap;
+		gap: 15px;
+	}
+
+	.herocontainer {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: -4rem;
+		margin-left: 15px;
+		margin-right: 15px;
+		max-width: 50rem;
+	}
+}
+
+// single
+.single {
+	display: flex;
+	gap: 50px;
+	.contents{
+		flex: 5;
+	}
+	.menus{
+		flex: 2;
+	}
+}
+
+// single end
