@@ -5,7 +5,7 @@ function Home() {
     {
       id: 1,
       title:
-        "This is post title. This is post title. This is post title",
+        "21 Passive Income Ideas To Help You Make Money In 2022",
       desc: "This is a post description and description plays a vital role in sites visibility. This is a post description and description plays a vital role in sites visibility. This is a post description and description plays a vital role in sites visibility",
       img: "https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/woman-desk-camera-tablet_SOAD19042_328368_st_1560x880.jpg",
     },
