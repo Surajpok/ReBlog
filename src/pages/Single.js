@@ -27,7 +27,7 @@ const Single = () => {
           </div>
           <div className="blog">
             <p>
-              Passive income (or unearned income, as it’s classified by the
+              Passive income (or unearned income, as it's classified by the
               Internal Revenue Service) is defined as income that requires
               minimal work to generate and maintain, coming from somewhere other
               than a traditional employer. Passive income streams can come from

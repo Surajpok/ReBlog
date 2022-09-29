@@ -6,7 +6,7 @@ const Footer = () => {
     <>
     <footer>
     <img
-    src = "/image/psurajj.png"
+    src = "/image/psurajj.svg"
     alt= "Footer Icon"
     />
     <span>Made With ❤️ & <b>React.js</b></span>

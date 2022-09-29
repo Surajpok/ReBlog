@@ -4,7 +4,7 @@ const Login = () => {
   return (
     <div className="container">
       <div className="wrap">
-        <p className="start">START FOR FREE</p>
+        <p className="start">WELCOME BACK</p>
         <h1 className="login">Login</h1>
         <p className="notamember">
           Not a Member?{" "}

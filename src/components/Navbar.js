@@ -7,9 +7,9 @@ const Navbar = () => {
         <div id="logo">
           <Link to="/">
             <img
-              src="/image/Psuraj.svg"
+              src="/image/psurajj.svg"
               alt="PSuraj | Digital Tool Website"
-              height={50}
+              height={60}
               width={150}
             />
           </Link>
