@@ -76,7 +76,9 @@ const Navbar = () => {
             <Link to="/page/contact">CONTACT</Link>
           </li>
           <li>
-            <Link to="/page/privacy">PRIVACY</Link>
+            <Link to="/write">
+              <button>ADD POST</button>
+            </Link>
           </li>
           <li>
             <label for="drop-2" class="toggle">
@@ -92,14 +94,14 @@ const Navbar = () => {
               <li>
                 <Link to="/register">SIGN UP</Link>
               </li>
-              
+
               <li>
                 <Link to="/login">LOGIN</Link>
               </li>
               <li>
                 <Link to="/logout">LOGOUT</Link>
               </li>
-              </ul>
+            </ul>
           </li>
         </ul>
       </nav>

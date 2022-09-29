@@ -142,6 +142,24 @@ nav {
 	// border-bottom: 1px solid #b1b7c5;
 	box-shadow: rgb(3 27 78 / 10%) 0 2px 4px;
 	z-index: 10;
+
+	button {
+		width: max-content;
+		padding: 5px 20px;
+		border: none;
+		cursor: pointer;
+		background-color: #FFF;
+		border: 2px solid $background;
+		font-size: 17px;
+		font-weight: 400;
+		color: $blogbutton;
+
+		&:hover {
+			border: 2px solid white;
+			background-color: $blogbutton;
+			color: #FFF;
+		}
+	}
 }
 
 #logo {
@@ -797,6 +815,7 @@ footer {
 					display: flex;
 					justify-content: space-between;
 					align-items: center;
+
 					button {
 						width: max-content;
 						padding: 5px 20px;
@@ -815,6 +834,7 @@ footer {
 						}
 
 					}
+
 					.info {
 						display: flex;
 						align-items: center;
@@ -835,6 +855,37 @@ footer {
 
 // single end
 
-// menu
+// write
 
-// menu end
+.add {
+	display: flex;
+	gap: 3.5rem;
+	margin: 3.5rem;
+
+	.content {
+		flex: 2.5;
+
+		h1 {
+			font-size: 30px;
+			margin-bottom: 1.0rem;
+			font-weight: 500;
+		}
+
+		input {
+			border: 1px solid #F1F1F1;
+			width: 100%;
+			margin-bottom: 2.8rem;
+			padding: 10px;
+		}
+	}
+
+	.aside {
+		display: flex;
+		float: 2;
+		flex-direction: column;
+		gap: 2.0rem;
+		flex: 1.2;
+	}
+}
+
+// write end
