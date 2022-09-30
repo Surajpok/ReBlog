@@ -2,7 +2,7 @@ $lightFont: #afafaf;
 $button: #8c30ff;
 $background: #8489ff;
 $blogbutton: #676cfd;
-
+$lightgray: #F1F1F1;
 
 
 .container {
@@ -51,6 +51,7 @@ $blogbutton: #676cfd;
 					border-bottom: 1px solid #E8E8E8;
 					font-size: 18px;
 					font-weight: 400;
+					outline: none;
 				}
 
 				::placeholder {
@@ -876,8 +877,13 @@ footer {
 			width: 100%;
 			margin-bottom: 2.8rem;
 			padding: 10px;
+			font-size: 21px;
+			outline: none;
+
 		}
 	}
+
+
 
 	.aside {
 		display: flex;
@@ -885,7 +891,83 @@ footer {
 		flex-direction: column;
 		gap: 2.0rem;
 		flex: 1.2;
+
+		.item {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			flex: 1;
+			border: 1px solid $lightgray;
+			padding: 1.0rem;
+			gap: 10px;
+			font-size: 18px;
+
+			h1 {
+				font-weight: 500;
+			}
+
+			.imginput {
+				display: none;
+			}
+
+			.file {
+				text-decoration: underline;
+				cursor: pointer;
+			}
+
+			.radio {
+				display: flex;
+				flex-direction: column;
+			}
+
+			.buttons {
+				display: flex;
+				justify-content: space-between;
+				gap: 15px;
+
+				:first-child {
+					display: flex;
+					justify-content: center;
+					flex: 1;
+					align-items: center;
+					padding: 5px 20px;
+					border: none;
+					cursor: pointer;
+					background-color: #FFF;
+					border: 2px solid $background;
+					font-size: 17px;
+					font-weight: 400;
+					color: $blogbutton;
+
+					&:hover {
+						border: 2px solid white;
+						background-color: $blogbutton;
+						color: #FFF;
+					}
+				}
+
+				:nth-child(2) {
+					display: flex;
+					justify-content: center;
+					flex: 1;
+					align-items: center;
+					padding: 5px 20px;
+					cursor: pointer;
+					border: 2px solid white;
+					font-size: 17px;
+					font-weight: 400;
+					background-color: $blogbutton;
+					color: #FFF;
+
+				}
+			}
+
+
+		}
 	}
+
+
+
 }
 
 // write end
