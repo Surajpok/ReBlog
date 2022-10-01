@@ -28,14 +28,13 @@ const MyEditor = () => {
   const [value, onChange] = useState("")
   console.log(value)
   return (
-    <div>
-      <RichTextEditor
-        value={value}
-        onChange={onChange}
-        onImageUpload={handleImageUpload}
-        id="rte"
-      />
-    </div>
+    <RichTextEditor
+      value={value}
+      onChange={onChange}
+      onImageUpload={handleImageUpload}
+      id="rte"
+      className="rte"
+    />
   )
 }
 

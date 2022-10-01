@@ -14,12 +14,12 @@ const Write = () => {
         <div class="item">
           <h1>Publish</h1>
 
-          <span>
-            <b>Status:</b> Draft
-          </span>
-          <span>
-            <b>Visibility:</b> Public
-          </span>
+          <div className="draft">
+            <span className="status">Status:</span> Draft
+          </div>
+          <div className="draft">
+            <span className="status">Visibility:</span> Public
+          </div>
           <input className="imginput" type="file" id="file" />
           <lebel className="file" htmlfor="file">
             Upload Image

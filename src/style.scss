@@ -6,6 +6,7 @@ $lightgray: #F1F1F1;
 
 
 .container {
+
 	.container {
 		padding: 0 0 0 4.0rem;
 		display: flex;
@@ -891,19 +892,30 @@ footer {
 		flex-direction: column;
 		gap: 2.0rem;
 		flex: 1.2;
+		max-height: min-content;
 
 		.item {
 			display: flex;
 			flex-direction: column;
-			justify-content: space-between;
-			flex: 1;
+			// justify-content: space-between;
+			// flex: 1;
 			border: 1px solid $lightgray;
 			padding: 1.0rem;
 			gap: 10px;
 			font-size: 18px;
+			font-weight: 300;
 
 			h1 {
 				font-weight: 500;
+				font-size: 30px;
+			}
+
+			.draft {
+
+
+				.status {
+					font-weight: 500;
+				}
 			}
 
 			.imginput {
@@ -971,3 +983,25 @@ footer {
 }
 
 // write end
+.rte {
+	min-height: 50vh;
+	font-size: 18px;
+	font-weight: 300;
+
+	h2 {
+		font-size: 35px;
+		font-weight: 500;
+	}
+
+	h3 {
+		font-size: 30px;
+		font-weight: 500;
+	}
+
+	h4 {
+		font-size: 25px;
+		font-weight: 500;
+
+	}
+
+}
