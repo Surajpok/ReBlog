@@ -1,0 +1,128 @@
+$lightFont: #afafaf;
+$button: #8c30ff;
+$background: #8489ff;
+$blogbutton: #676cfd;
+$lightgray: #F1F1F1;
+
+.container {
+
+	.container {
+		padding: 0 0 0 4.0rem;
+		display: flex;
+		gap: 4.0rem;
+
+		.wrap {
+			display: flex;
+			align-items: flex-start;
+			justify-content: center;
+			height: 90vh;
+			flex-direction: column;
+			flex: 0.9;
+			flex-wrap: wrap;
+
+			.start {
+				font-size: 16px;
+				color: $lightFont;
+				font-weight: 400;
+			}
+
+			.login {
+				font-size: 35px;
+				font-weight: 400;
+				margin-top: 0.8rem;
+			}
+
+			.notamember {
+				margin-top: 1.8rem;
+				font-size: 18px;
+			}
+
+			.form {
+				display: flex;
+				flex-direction: column;
+				gap: 2.5rem;
+				width: 100%;
+				margin: 2.5rem 9.0rem 0 0;
+
+				input {
+					height: 30px;
+					color: #000;
+					border: none;
+					border-bottom: 1px solid #E8E8E8;
+					font-size: 18px;
+					font-weight: 400;
+					outline: none;
+				}
+
+				::placeholder {
+					font-size: 18px;
+					font-weight: 300;
+					color: $lightFont;
+					padding-top: 1.0rem;
+				}
+
+
+			}
+
+			button {
+				height: 50px;
+				font-size: 18px;
+				border-radius: 88px;
+				border: none;
+				color: #fff;
+				background-color: $button;
+			}
+
+			.checkbox {
+				margin-top: 2.5rem;
+				display: flex;
+				width: 100%;
+				justify-content: space-between;
+				font-size: 18px;
+
+				.lebel {
+					display: flex;
+					gap: 5px;
+				}
+
+				input[type="checkbox"] {
+					width: 18px;
+					height: 18px;
+				}
+
+			}
+
+			.or {
+				margin-top: 1.4rem;
+				font-size: 18px;
+				color: $lightFont;
+				width: 100%;
+				display: flex;
+				justify-content: center;
+			}
+
+			.auth {
+				margin-top: 1.4rem;
+				display: flex;
+				justify-content: space-between;
+				width: 100%;
+
+				img {
+					height: 50px;
+				}
+			}
+
+		}
+
+
+
+		.image2 {
+			background-image: url(../../../public/image/loginside.png);
+			flex: 1.1;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: 45% 100%;
+		}
+	}
+
+}

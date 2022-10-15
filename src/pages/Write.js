@@ -1,5 +1,5 @@
 import MyEditor from "./MyEditor"
-
+import "./styles/Write.scss"
 const Write = () => {
   return (
     <div className="add">

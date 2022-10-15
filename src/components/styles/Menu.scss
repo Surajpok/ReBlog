@@ -1,0 +1,153 @@
+$lightFont: #afafaf;
+$button: #8c30ff;
+$background: #8489ff;
+$blogbutton: #676cfd;
+$lightgray: #F1F1F1;
+	// menu
+
+	.menus {
+		display: flex;
+		flex-direction: column;
+		gap: 25px;
+		padding: 4.5rem 3.5rem 3rem 0;
+		flex: 2;
+
+		h1 {
+			font-size: 30px;
+			font-weight: 500;
+		}
+
+		.side {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			padding-top: 2rem;
+
+			.sideimg {
+				img {}
+			}
+
+			.sidecontent {
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+
+				h2 {
+					font-size: 22px;
+					line-height: 25px;
+					font-weight: 400;
+				}
+
+				.buttonflex {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+
+					button {
+						width: max-content;
+						padding: 5px 20px;
+						border: none;
+						cursor: pointer;
+						background-color: #FFF;
+						border: 1px solid $background;
+						font-size: 18px;
+						font-weight: 300;
+						color: $blogbutton;
+
+						&:hover {
+							border: 1px solid white;
+							background-color: $blogbutton;
+							color: #FFF;
+						}
+
+					}
+
+					.info {
+						display: flex;
+						align-items: center;
+
+						img {
+							width: 40px;
+							height: 40px;
+							border-radius: 50%;
+							object-fit: cover;
+						}
+					}
+				}
+			}
+		}
+	}
+	@media all and (max-width : 768px) {
+		.menus {
+			display: flex;
+			flex-direction: column;
+			gap: 25px;
+			padding: 1.5rem 1rem 1.5rem 1rem;
+			flex: 2;
+	
+			h1 {
+				font-size: 30px;
+				font-weight: 500;
+			}
+	
+			.side {
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+				padding-top: 2rem;
+	
+				.sideimg {
+					img {}
+				}
+	
+				.sidecontent {
+					display: flex;
+					flex-direction: column;
+					gap: 20px;
+	
+					h2 {
+						font-size: 22px;
+						line-height: 25px;
+						font-weight: 400;
+					}
+	
+					.buttonflex {
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+	
+						button {
+							width: max-content;
+							padding: 5px 20px;
+							border: none;
+							cursor: pointer;
+							background-color: #FFF;
+							border: 1px solid $background;
+							font-size: 18px;
+							font-weight: 300;
+							color: $blogbutton;
+	
+							&:hover {
+								border: 1px solid white;
+								background-color: $blogbutton;
+								color: #FFF;
+							}
+	
+						}
+	
+						.info {
+							display: flex;
+							align-items: center;
+	
+							img {
+								width: 40px;
+								height: 40px;
+								border-radius: 50%;
+								object-fit: cover;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
